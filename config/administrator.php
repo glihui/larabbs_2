@@ -61,6 +61,8 @@ return array(
     'menu' => [
         '用户与权限' => [
             'users',
+            'roles',
+            'permissions',
         ],
     ],
 
@@ -115,7 +117,6 @@ return array(
      *
      * @type string
      */
-    'logout_path' => false,
 
     /*
      * This is the key of the return path that is sent with the redirection to your login_action. Session::get('redirect') will hold the return URL.
@@ -139,5 +140,4 @@ return array(
      */
     'locales' => [],
 
-    'custom_routes_file' => app_path('Http/routes/administrator.php'),
 );
