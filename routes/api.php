@@ -88,6 +88,9 @@ $api->version('v1', [
                 ->name('api.user.show');
 
             $api->patch('user', 'UsersController@update')
+                ->name('api.user.patch');
+
+            $api->put('user', 'UsersController@update')
                 ->name('api.user.update');
 
             $api->post('images', 'ImagesController@store')
