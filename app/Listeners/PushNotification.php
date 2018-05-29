@@ -30,7 +30,7 @@ class PushNotification implements ShouldQueue
     public function handle(DatabaseNotification $notification)
     {
         // 本地环境默认不推送
-        // 线上也不推送
+        // 线上环境也暂时不推送
         return;
         if (app()->environment('local')) {
             return;
